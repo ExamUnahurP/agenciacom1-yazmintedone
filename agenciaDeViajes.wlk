@@ -20,6 +20,8 @@ class coordinador{
     method cantidadDeViajesRealizados(){}
     method estaMotivado(){}
     method añosDeExperiencia(){}
-    
+    method cambiarRol(unRol){}
 
 }
+
+class BeneficiosEspecial
