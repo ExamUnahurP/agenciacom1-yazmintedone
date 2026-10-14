@@ -28,7 +28,7 @@ class Internacional inherits PackDeViajes{
     const cantidadDeEscalas
     const esDeInteres
 
-    override method valorFinalDelPack(){return super() * 0.2}
+    override method valorFinalDelPack(){return super() * 1.2}
 
     override method esPremium(){return esDeInteres and duracionDeDias > 20 and cantidadDeEscalas = 0}
 }
@@ -47,7 +47,7 @@ class Coordinador{
     }
 
 }
-/tiposDeBeneficios = traslados vip, acceso a salas vip, seguros adicionales
+//tiposDeBeneficios = traslados vip, acceso a salas vip, seguros adicionales
 class BeneficioOpcional inherits PackDeViajes{
     method tipoDeBeneficio(){}
     method costoDelBeneficio(){}
