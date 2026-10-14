@@ -3,6 +3,8 @@ class PackDeViajes{
     const precioBase
     const beneficioEspecial
     method coordinadorACargo(unCordinador)
+
+    method valorFinalDelPack(){return precioBase + beneficioEspecial }
 }
 
 class Nacional inherits PackDeViajes{
@@ -13,6 +15,8 @@ class Internacional inherits PackDeViajes{
     const provinciaDestino
     const cantidadDeEscalas
     const esDeInteres
+
+    override method valorFinalDelPack(){return super() * 0.2}
 }
 
 class Coordinador{
@@ -28,4 +32,8 @@ class BeneficioOpcional inherits PackDeViajes{
     method tipoDeBeneficio(){}
     method costoDelBeneficio(){}
     method estaVigente(){}
+
+    method 
+
 }
+
