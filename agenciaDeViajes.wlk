@@ -18,7 +18,8 @@ class Nacional inherits PackDeViajes{
 class Provincial inherits Nacional{
     const cantidadDeCiudadesAVisitar
 
-    override method es
+    override method esPremium(){return cantidadDeCiudadesAVisitar > 5 and
+                                actividadesIncluidas.size() }
 }
 class Internacional inherits PackDeViajes{
     const provinciaDestino
