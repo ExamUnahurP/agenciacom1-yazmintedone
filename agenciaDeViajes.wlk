@@ -24,7 +24,7 @@ class Provincial inherits Nacional{
     override method valorFinalDelPack(){return super() and self.esPremium * }
 }
 class Internacional inherits PackDeViajes{
-    const paisDestino
+    const paisDeDestino
     const cantidadDeEscalas
     const esDeInteres
 
