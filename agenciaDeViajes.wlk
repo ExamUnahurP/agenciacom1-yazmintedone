@@ -16,5 +16,10 @@ class internacional inherits PackDeViajes{
 }
 
 class coordinador{
-    method cantidadDeViaje
+    var rol
+    method cantidadDeViajesRealizados(){}
+    method estaMotivado(){}
+    method añosDeExperiencia(){}
+    
+
 }
