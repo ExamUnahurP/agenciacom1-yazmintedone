@@ -15,6 +15,9 @@ class Nacional inherits PackDeViajes{
 
     override method esPremium(){return duracionDeDias > 10 and coordinadorACargo.esAltamenteCalificado()}
 }
+class Provincial inherits Nacional{
+    
+}
 class Internacional inherits PackDeViajes{
     const provinciaDestino
     const cantidadDeEscalas
@@ -22,7 +25,7 @@ class Internacional inherits PackDeViajes{
 
     override method valorFinalDelPack(){return super() * 0.2}
 
-    override method es
+    override method esPremium(){return esDeInteres and duracionDeDias > 20 and cantidadDeEscalas = 0}
 }
 
 class Coordinador{
