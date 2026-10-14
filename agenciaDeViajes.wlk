@@ -1,7 +1,7 @@
 class PackDeViajes{
-    method duracionDeDias(){}
-    method precioBase{}
-    method beneficioEspecial()
+    const duracionDeDias
+    const precioBase
+    const beneficioEspecial
     method coordinadorACargo(unCordinador)
 }
 
@@ -9,19 +9,23 @@ class Nacional inherits PackDeViajes{
     const provinciaDestino
     const actividadesIncluidas={}
 }
-class internacional inherits PackDeViajes{
+class Internacional inherits PackDeViajes{
     const provinciaDestino
     const cantidadDeEscalas
     const esDeInteres
 }
 
-class coordinador{
+class Coordinador{
     var rol
-    method cantidadDeViajesRealizados(){}
-    method estaMotivado(){}
-    method añosDeExperiencia(){}
+    const cantidadDeViajesRealizados
+    const estaMotivado
+    const añosDeExperiencia
     method cambiarRol(unRol){}
 
 }
-
-class BeneficiosEspecial
+/tiposDeBeneficios = traslados vip, acceso a salas vip, seguros adicionales
+class BeneficioOpcional inherits PackDeViajes{
+    method tipoDeBeneficio(){}
+    method costoDelBeneficio(){}
+    method estaVigente(){}
+}
